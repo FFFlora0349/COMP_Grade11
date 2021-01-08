@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script type="text/javascript" src="script.js"></script>
+		<style>
+			
+		/*bact to top button*/
+			.back-to-top {
+ 
+		background: none;
+
+		margin: 0;
+
+		position: fixed;
+
+		bottom: 0;
+
+		right: 0;
+
+		width: 70px;
+
+		height: 70px;
+
+		z-index: 100;
+
+		display: none;
+
+		text-decoration: none;
+
+		color: #ffffff;
+
+		background-color: #222;
+
+		}
+			
+		.back-to-top i {
+
+			font-size: 60px;
+
+		}
+			
+			
+		/*CSS-only parallax scrolling no JS*/
+		/*************************************************************
+			HEADER
+		**************************************************************/
+		.section3 {
+			position: relative;
+			min-height: 100vh;
+			width: 100%;
+			transform-style: inherit;
+			z-index: -1;
+		}
+
+		.section3::before {
+			content: '';
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			display: block;
+			background: url(homepage/art.jpg) top center;
+			background-size: cover;
+			transform: translateZ(-1px) scale(2.1);
+			min-height: 100%;
+			z-index: -2;
+		}
+
+
+		/*************************************************************
+			SECTIONS
+		**************************************************************/
+		section {
+			position: relative;
+			min-height: 100vh;
+			width: 100%;
+			position: relative;
+			transform-style: inherit;
+			perspective: 1px;
+
+		}
+
+		.section1 {
+			background: #fafafa;
+			box-shadow: 0 0 20px #333;
+			z-index: 1;
+		}
+
+		.section2::before {
+			content: '';
+			position: absolute;
+			top: 0; left: 0; right: 0; bottom: 0;
+			display: block;
+			background: url(homepage/art2.jpg) top center;
+			{opacity: 0;}
+			background-size: cover;
+			transform: translateZ(-.5px) scale(1.6);
+			z-index: -1;
+		}
+
+		/*************************************************************
+			HEADINGS
+		**************************************************************/
+		h1 {
+			font-size: 2.5rem;
+			text-align: center;
+			position: absolute;
+			padding: 0.5rem;
+			margin-top: 150px;
+			background: #fafafa;
+			box-shadow: 0 0 50px #333;
+			top: 50%;
+			left: 50%;
+			transform: translateZ(-1px) scale(2) translate(-25%, -25%);
+		}
+		
+		.section1 h1 {
+			z-index: 3;
+			transform: translate(-50%, -50%);
+			box-shadow: none;
+		}
+
+		.section2 h1 {
+			transform: translateZ(-.3px) scale(1.3) translate(-39%, -39%);
+			z-index: 3;
+		}
+
+		/*************************************************************
+			BASIC STYLES
+		**************************************************************/
+		*,
+		*::before,
+		*::after,
+		:root {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		@import 'https://fonts.googleapis.com/css?family=Overlock:400,400i,700|Oleo+Script';
+
+		html {
+			overflow: hidden;
+			height: 100%;
+		}
+
+		body {
+			overflow-x: hidden;
+			overflow-y: scroll;
+			height: 100%;/*move perspective from body to section tag--fixed nav bar*/
+			transform-style: preserve-3d;
+			font-size: 62.5%;
+			font-family: 'Overlock', Arial, Helvetica, sans-serif;
+		}
+
+		
+		</style>
+		
+    <title>The World of Art</title>
+		
+		<header>
+			<nav >
+				<div class='nav'>
+					<ul>
+						<li><a href="index.html" style="color:#F56949;">HOME</a></li>
+						<li><a href="photographs.html">PHOTOGRAPHS</a>
+                            <ul>
+                                <li><a href="photographs.html#lanscapes">Landscapes</a></li>
+                                <li><a href="photographs.html#night views">Night Views</a></li>
+                                <li><a href="photographs.html#people">People</a></li>
+                                <li><a href="photographs.html#black & white">Black & White</a></li>
+				            </ul>
+						</li>
+						<li><a href="graphics.html">GRAPHICS</a>
+							<ul>
+                                <li><a href="graphics.html#brand & logo">Brand & Logo</a></li>
+                                <li><a href="graphics.html#publication & poster">Publication & Poster</a></li>
+                                <li><a href="graphics.html#card & package">Card & Package</a></li>
+                                <li><a href="graphics.html#environment">Environment</a></li>
+							</ul>
+						</li>
+						<li><a href="drawings.html">DRAWINGS</a>
+							<ul>
+                                <li><a href="drawings.html#line%20art">Line Art</a></li>
+                                <li><a href="drawings.html#sketch">Sketch</a></li>
+                                <li><a href="drawings.html#oil painting">Oil Painting</a></li>
+                                <li><a href="drawings.html#animation">Animation</a></li>
+							</ul>
+						</li>
+						<li><a href="a-doodling-pad.html">A Doodling Pad</a></li>
+						<li class='lamp'><span></span></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+  </head>
+    
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<body>
+	  
+
+	<!--Section w/ parallax effect-->
+	<section class="section3">
+		
+</section>
+  <h1 style="font-size:20px">The World of Visual Art</h1>
+
+	<!--Section w/o parallax effect-->
+	<section class="section1" style="font-size: 20px; padding: 30px;">
+			<div class="content">
+			<p>		Art is a diverse range of human activities in creating visual, auditory or performing artifacts (artworks), expressing the author's imaginative, conceptual idea, or technical skill, intended to be appreciated for their beauty or emotional power. In their most general form these activities include the production of works of art, the criticism of art, the study of the history of art, and the aesthetic dissemination of art.</p>
+		
+		<h3 id="myDIV" >Art Disciplines</h3>
+			<p>		There are four major disciplines of art including performing arts, literary arts, visual arts, and multidisciplinary arts. The performing arts include dance, music, and theater, while the literary arts include drama and poetry. Most people are familiar with visual and performing arts. Visual arts include paintings, photographs, ceramics, and sculptures, among other kinds of art. Performing arts are typically what people think of when they think of the works of Shakespeare - people on the stage - as well as musical performances and dance</p>
+			<p>		The literary arts are typically things to do with literature - such as writing books, creating pictographs, etc. Typography is an example of such an art form. The multidisciplinary arts combine the arts in some way. This means that something like a comic book has both visual art and literary art. Operas, for example, or Broadway plays do this - they combine music, dancing, and acting on the stage to create a new kind of experience for the viewer. Films or cinematography is a prime example of multidisciplinary arts because it includes performing arts (acting,) literary arts (scripts,) and visual arts (effects, set design.)</p>
+				<video src="http://www.giampierobodino.com/videos/ad-personam-544-en.webm" controls width="700px;" style="float: right; margin: 0px;"></video>
+			<p>		Until the 17th century, art referred to any skill or mastery and was not differentiated from crafts or sciences. In modern usage after the 17th century, where aesthetic considerations are paramount, the fine arts are separated and distinguished from acquired skills in general, such as the decorative or applied arts.</p>
+			<p>		Though the definition of what constitutes art is disputed and has changed over time, general descriptions mention an idea of imaginative or technical skill stemming from human agency[7] and creation.[8] The nature of art and related concepts, such as creativity and interpretation, are explored in a branch of philosophy known as aesthetics.</p>
+
+		<h3 id="myDIV" >Forms, genres, media, and styles</h3>
+			<p>		The creative arts are often divided into more specific categories, typically along perceptually distinguishable categories such as media, genre, styles, and form. Art form refers to the elements of art that are independent of its interpretation or significance. It covers the methods adopted by the artist and the physical composition of the artwork, primarily non-semantic aspects of the work (i.e., figurae), such as color, contour, dimension, medium, melody, space, texture, and value. Form may also include visual design principles, such as arrangement, balance, contrast, emphasis, harmony, proportion, proximity, and rhythm.</p>
+		<img src='homepage/art3.jpg' width='220' height='280' style="float: left; margin-right: 50px; margin-left: 50px" alt="man with colorful hair"/>
+			<p>		In general there are three schools of philosophy regarding art, focusing respectively on form, content, and context. Extreme Formalism is the view that all aesthetic properties of art are formal (that is, part of the art form). Philosophers almost universally reject this view and hold that the properties and aesthetics of art extend beyond materials, techniques, and form. Unfortunately, there is little consensus on terminology for these informal properties. Some authors refer to subject matter and content – i.e., denotations and connotations – while others prefer terms like meaning and significance.</p>
+			<p>Extreme Intentionalism holds that authorial intent plays a decisive role in the meaning of a work of art, conveying the content or essential main idea, while all other interpretations can be discarded. It defines the subject as the persons or idea represented, and the content as the artist's experience of that subject. For example, the composition of Napoleon I on his Imperial Throne is partly borrowed from the Statue of Zeus at Olympia. As evidenced by the title, the subject is Napoleon, and the content is Ingres's representation of Napoleon as "Emperor-God beyond time and space". Similarly to extreme formalism, philosophers typically reject extreme intentionalism, because art may have multiple ambiguous meanings and authorial intent may be unknowable and thus irrelevant. Its restrictive interpretation is "socially unhealthy, philosophically unreal, and politically unwise".</p>
+		<img src='homepage/art5.png' width='220' height='280' style="float: right; margin-left: 50px; margin-right: 70px;" alt="Rock in Ink music concert poster"/>
+			<p>		Finally, the developing theory of post-structuralism studies art's significance in a cultural context, such as the ideas, emotions, and reactions prompted by a work. The cultural context often reduces to the artist's techniques and intentions, in which case analysis proceeds along lines similar to formalism and intentionalism. However, in other cases historical and material conditions may predominate, such as religious and philosophical convictions, sociopolitical and economic structures, or even climate and geography. Art criticism continues to grow and develop alongside art.</p>
+			<a href="https://en.wikipedia.org/wiki/Art" target="_blank">Learn More</a>
+		</div>
+</section>
+		
+<!--Section w/ parallax effect-->
+<section class="section2">
+  <h1>Art is everywhere you look for it.</h1>
+</section>
+
+</body>	
+<footer style="position: fixed; z-index: 20">
+		<a class="back-to-top" style="display: inline;" href="index.html">Back to Top</a>
+</footer>
+	
+
+</html>
